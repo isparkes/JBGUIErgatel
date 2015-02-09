@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Ergatel JBilling GUI"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="pnlScheduledTasks" max="32767" attributes="2"/>
+                  <Component id="jPanel2" alignment="0" max="32767" attributes="2"/>
+                  <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btnExit" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="pnlScheduledTasks" min="-2" max="-2" attributes="1"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnExit" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title=" Parent User "/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblBCN" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblUserID" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txtParentUserID" min="-2" pref="54" max="-2" attributes="0"/>
+                      <Component id="txtBCN" min="-2" pref="113" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="btnFindByUserId" max="32767" attributes="0"/>
+                      <Component id="btnFindByBCN" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="lblCompanyName" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="chkIsParent" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtUserNameOrg" min="-2" pref="403" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtUserNameOrg" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCompanyName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="chkIsParent" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblBCN" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtBCN" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnFindByBCN" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtParentUserID" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblUserID" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnFindByUserId" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lblBCN">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="User BCN"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtBCN">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBCNActionPerformed"/>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtBCNKeyTyped"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnFindByBCN">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Find"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFindByBCNActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFindByBCN.setText(&quot;Find&quot;);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtParentUserID">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtParentUserIDActionPerformed"/>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtParentUserIDKeyTyped"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblUserID">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="UserID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtUserNameOrg">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUserNameOrgActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCompanyName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Company Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnFindByUserId">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Find"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFindByUserIdActionPerformed"/>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="btnFindByUserIdKeyTyped"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="chkIsParent">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Parent"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkIsParentActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="pnlScheduledTasks">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Scheduled Tasks"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="btnTriggerLoading" min="-2" max="-2" attributes="1"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btnTriggerBilling" min="-2" pref="173" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="processPayout" min="-2" pref="195" max="-2" attributes="1"/>
+                  <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="rbLive" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="rbLab" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="rbLocalhost" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnTriggerLoading" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnTriggerBilling" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="processPayout" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="rbLive" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="rbLab" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="rbLocalhost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="btnTriggerBilling">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Trigger Billing Run"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTriggerBillingActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnTriggerLoading">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Trigger CDR Loading"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTriggerLoadingActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="processPayout">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Process Partner Payouts"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="processPayout.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                processPayoutActionPerformed(evt);&#xa;            }&#xa;        });"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="rbLive">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jb-live"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbLiveActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="rbLab">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jb-lab"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbLabActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="rbLocalhost">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="localhost"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbLocalhostActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Create Sub Account"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lblCreatedUser" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtNewID" min="-2" pref="54" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lblANumber" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtANumber" min="-2" pref="112" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="btnLoad" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblMobileRate" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblMobileBundle" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDateFrom" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblOptionalBundles" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="cbxBundles" alignment="0" pref="362" max="32767" attributes="0"/>
+                          <Component id="cbxOptionalBundlesSelected" max="32767" attributes="0"/>
+                          <Component id="cbxRates" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="dchDateFrom" min="-2" pref="149" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblDateTo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="dchDateTo" min="-2" pref="143" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btnCreateSubAcct" min="-2" pref="83" max="-2" attributes="0"/>
+                      <Component id="btnAddBundle" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnRemoveBundle" min="-2" pref="83" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblDateFrom" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtANumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblANumber" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="lblDateTo" min="-2" max="-2" attributes="0"/>
+                      <Component id="dchDateFrom" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="dchDateTo" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtNewID" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblCreatedUser" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblMobileRate" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="cbxRates" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblMobileBundle" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbxBundles" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbxOptionalBundlesSelected" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblOptionalBundles" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnLoad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Component id="btnCreateSubAcct" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="49" pref="49" max="-2" attributes="0"/>
+                  <Component id="btnAddBundle" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnRemoveBundle" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lblANumber">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A Number"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtANumber">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtANumberActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtANumberKeyReleased"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbxRates">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxRatesActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblMobileRate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mobile Rate"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblMobileBundle">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Optional Bundles"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbxBundles">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxBundlesActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCreateSubAcct">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Create"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateSubAcctActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCreatedUser">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="New User"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtNewID">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnLoad">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Load List"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoadActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDateFrom">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Valid From"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDateTo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="To"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAddBundle">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add to List"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddBundleActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbxOptionalBundlesSelected">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxOptionalBundlesSelectedActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnRemoveBundle">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remove"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRemoveBundleActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblOptionalBundles">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bundles Selected"/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="dchDateFrom">
+          <Properties>
+            <Property name="dateFormatString" type="java.lang.String" value="MM/dd/yyyy"/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="dchDateTo">
+          <Properties>
+            <Property name="dateFormatString" type="java.lang.String" value="MM/dd/yyyy"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnExit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exit"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Partner"/>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(&quot; Partner Management &quot;));"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel()"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="pRateTxt" max="32767" attributes="1"/>
+                                      <Component id="refFee" max="32767" attributes="1"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="608" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="partnerId" min="-2" pref="186" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="serviceTypeStrings" min="-2" pref="127" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="partnerServiceIds" min="-2" pref="105" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="loadPartners" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="partnerServiceCreate" min="-2" max="-2" attributes="1"/>
+                          <EmptySpace min="-2" pref="333" max="-2" attributes="0"/>
+                          <Component id="loadPartServ" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="partnerServEdit" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="partnerServUpdate" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="partnerId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="serviceTypeStrings" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="partnerServiceIds" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pRateTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="refFee" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="loadPartners" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="partnerServiceCreate" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="loadPartServ" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="partnerServEdit" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="partnerServUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Partner id"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="loadPartners">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Load Partner List"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loadPartnersActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="partnerId">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { })" type="code"/>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Service Type"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="serviceTypeStrings">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { })" type="code"/>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Percentage Rate"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Referral Fee"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="pRateTxt">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="pRateTxt.setText(&quot;0.00&quot;);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="refFee">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refFeeActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="refFee.setText(&quot;0.00&quot;);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="partnerServiceCreate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Create"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="partnerServiceCreate.addActionListener(new java.awt.event.ActionListener() {&#xa;    public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;        partnerServiceCreateActionPerformed(evt);&#xa;    }&#xa;});"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="loadPartServ">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Show Partner services"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="loadPartServ.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                loadPartServActionPerformed(evt);&#xa;            }&#xa;        });"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="partnerServiceIds">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel(new String[] {  })" type="code"/>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="/*partnerServiceIds.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void partnerServiceIdsactionPerformed(java.awt.event.ActionEvent evt) {&#xa;               // partnerServiceIdsActionPerformed(evt);&#xa;            }&#xa;        });*/"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Partner Service id"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="partnerServEdit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="partnerServUpdate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="partnerServUpdate.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                partnerServUpdateActionPerformed(evt);&#xa;            }&#xa;        });"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
